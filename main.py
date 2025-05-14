@@ -47,7 +47,7 @@ def show_torrent(ctx, torrent_id):
 
 @cli.command()
 @click.option('--delete-data/--no-delete-data', default=False)
-@click.argument('torrent_ids', type=click.INT)
+@click.argument('torrent_ids')
 @click.pass_context
 def delete_torrent(ctx, delete_data, torrent_ids):
     """
